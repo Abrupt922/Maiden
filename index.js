@@ -21,7 +21,8 @@ main().then(()=>{
 }).catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://abruptking_db_user:iOSdP9soEv86KpDV@cluster0.0hs5rs1.mongodb.net/?appName=Cluster0');
+ await mongoose.connect('mongodb+srv://abrupt:abrupt@cluster0.0hs5rs1.mongodb.net/?appName=Cluster0');
+
 
   
 }
