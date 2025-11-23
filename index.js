@@ -27,6 +27,7 @@ async function main() {
   
 }
 
+
 app.listen(8080,()=>{
     console.log("app is listening")
 });
@@ -55,6 +56,10 @@ app.get("/chats/:id/edit", async (req, res) => {
   const { id } = req.params;
   let chat = await Chat.findById(id);
   res.render("edit.ejs", { id, chat});
+});
+// Add this route handler right before your app.listen block
+app.get("/", (req, res) => {
+    res.redirect("/chats"); // Redirects the user from / to /chats
 });
 app.put("/chats/:id", async (req, res) => {
   let { id } = req.params;
