@@ -21,7 +21,7 @@ main().then(()=>{
 }).catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/whatsapp');
+  await mongoose.connect('mongodb+srv://abruptking_db_user:iOSdP9soEv86KpDV@cluster0.0hs5rs1.mongodb.net/?appName=Cluster0');
 
   
 }
